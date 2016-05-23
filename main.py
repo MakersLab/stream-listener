@@ -11,7 +11,7 @@ adress = '0.0.0.0'
 
 def connectionThread(conn):
     # production only
-    control = Stream('none')
+    control = Stream()
 
     msg_recv = conn.recv(1024)
     msg_recv = msg_recv.decode('utf8')
