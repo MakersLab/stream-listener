@@ -1,7 +1,7 @@
 import os
 
-START_STREAM_PATH = '/stream/start_stream.sh'
-STOP_STREAM_PATH = '/stream/stop_stream.sh'
+START_STREAM_PATH = 'stream/start_stream.sh'
+STOP_STREAM_PATH = 'stream/stop_stream.sh'
 
 
 class Stream():
