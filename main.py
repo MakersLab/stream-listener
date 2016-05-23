@@ -1,4 +1,4 @@
-from stream import Stream
+from stream.stream import Stream
 import threading
 import socket
 import json
