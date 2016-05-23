@@ -17,7 +17,7 @@ class Stream():
 
     def stopstream(self,key):
         try:
-            os.system('sudo sh ' + STOP_STREAM_PATH + ' ' + key)
+            os.system('sudo sh ' + STOP_STREAM_PATH)
             return True
         except Exception as e:
             return False
