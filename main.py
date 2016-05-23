@@ -18,7 +18,7 @@ def connectionThread(conn):
     msgEncoded = json.loads(msg_recv)
     stream_key = msgEncoded['key']
     success = False
-    message='unknown error'
+    message = 'unknown error'
     if stream_key != '':
         if (msgEncoded['control'] == 'start'):
             success = control.startStream(stream_key)
@@ -57,4 +57,5 @@ if __name__ == '__main__':
         conn, addr = connection.accept()
         print('Got connection')
         t = threading.Thread(target=connectionThread, args=[conn, ])
+        t.daemon = True
         t.start()
